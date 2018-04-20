@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registered</title>
+</head>
+<body>
+	<h1>Welcome, you've been logged in, {{request.session.name}}!</h1>
+<form action='logout' method='get'>
+	{% csrf_token %}
+	<button>Logout</button>
+</form>
+</body>
+</html>
